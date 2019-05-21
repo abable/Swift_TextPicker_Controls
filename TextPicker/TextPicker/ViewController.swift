@@ -60,7 +60,18 @@ extension ViewController: UIPickerViewDelegate {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        print(devTools[row])
+        
+        switch component {
+        case 0:
+            print(devTools[row])
+        case 1:
+            print(fruits[row])
+
+        default:
+            print(fruits[row])
+        }
+        
+//        print(devTools[row])
     }
 }
 
